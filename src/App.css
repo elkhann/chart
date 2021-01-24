@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+@import "~antd/dist/antd.css";
+
+.ant-table-thead > tr > th {
+  background-color: rgb(216, 216, 216);
+  border: 3px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr > td.ant-table-cell {
+  padding: 0;
+  background-color: rgb(240, 240, 240);
+  border: 3px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green {
+  background-color: rgb(232, 255, 243);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red {
+  background-color: rgb(253, 227, 221);
 }
 
-.App-link {
-  color: #61dafb;
+.ant-table-cell + .today {
+  background-color: rgb(217, 241, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+[data-row-key="chart"] > td.ant-table-cell {
+  background-color: white;
+}
+
+.highcharts-container svg {
+  margin: auto;
 }
