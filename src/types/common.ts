@@ -6,7 +6,7 @@ export enum Payments {
 }
 
 export interface ChartData {
-  [Payments.ALL]: any;
+  [Payments.ALL]: number;
   [Payments.CASH]: number;
   [Payments.CASHLESS]: number;
   [Payments.CREDIT]: number;

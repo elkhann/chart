@@ -1,4 +1,3 @@
-import { Interface } from "readline";
 import { Chart, Payments } from "../types/common";
 
 const charts: Chart[] = [
